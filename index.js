@@ -208,7 +208,7 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-console.log('task 1a', artists[0].name);
+// console.log('task 1a', artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
 
@@ -243,7 +243,7 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s( ) {
+function get20s() {
 //   let in20s =[];
 //   for(let i = 0; i < artists.length; i++){
 //   let years = array[i].years.split(' ');
@@ -265,15 +265,11 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array, number) {
-//   for(let i = 0; i < artists.length; i++){
-//     if(array[i] === number){
-//       array.splice(i, 1);
-//     }
-//   }
-//   return array;
+function removeArtist(array) {
+  array.splice(0, 1);
+  return array.length;
 }
-// console.log('task 5', removeArtist(artists, 0));
+console.log('task 5', removeArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -295,7 +291,7 @@ function addArtist(array, id, name, years, genre, nationality, bio) {
   array.push({id:id, name:name, years:years, genre:genre, nationality:nationality, bio:bio});
   return array
 }
-// console.log('task 6', addArtist(artists, '20', 'Jessy Martinez', '1997-Present', 'Web Design', 'Mexican-korean', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consectetur quae sapiente sed modi sunt soluta esse facilis maxime, assumenda, natus at cum atque excepturi voluptate, quod aperiam error consequuntur!'));
+console.log('task 6', addArtist(artists, '20', 'Jessy Martinez', '1997-Present', 'Web Design', 'Mexican-korean', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consectetur quae sapiente sed modi sunt soluta esse facilis maxime, assumenda, natus at cum atque excepturi voluptate, quod aperiam error consequuntur!'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
